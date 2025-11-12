@@ -1,0 +1,101 @@
+===HTML===
+<span id="84:1949;a-label" class="" data-aura-rendered-by="434:1949;a">Salutation</span>
+<div data-aura-rendered-by="93:1949;a"><a aria-disabled="false" role="combobox" aria-describedby="84:1949;a-label" tabindex="0" aria-expanded="false" aria-required="false" aria-haspopup="true" title="" class="select" data-aura-rendered-by="94:1949;a" href="javascript:void(0);" data-interactive-lib-uid="4">--None--</a></div>
+<label for="123:1949;a" class="uiLabel-top form-element__label uiLabel" data-aura-rendered-by="443:1949;a" data-aura-class="uiLabel"><span id="123:1949;a-label" class="" data-aura-rendered-by="444:1949;a">First Name</span><!--render facet: 446:1949;a--><!--render facet: 447:1949;a--></label>
+<input aria-labelledby="123:1949;a-label" maxlength="40" aria-describedby="" id="123:1949;a" placeholder="First Name" type="text" class="firstName compoundBorderBottom form-element__row input" data-aura-rendered-by="127:1949;a" data-interactive-lib-uid="2">
+<label for="133:1949;a" class="uiLabel-top form-element__label uiLabel" data-aura-rendered-by="452:1949;a" data-aura-class="uiLabel"><span id="133:1949;a-label" class="" data-aura-rendered-by="453:1949;a">Last Name</span><!--render facet: 455:1949;a--><span id="133:1949;a-required" title="required" class="required " data-aura-rendered-by="134:1949;a">*</span></label>
+<input aria-labelledby="133:1949;a-label 133:1949;a-required" maxlength="80" aria-describedby="" id="133:1949;a" placeholder="Last Name" type="text" class="lastName compoundBLRadius compoundBRRadius form-element__row input" required="" data-aura-rendered-by="137:1949;a" data-interactive-lib-uid="3" aria-required="true">
+<label for="190:1949;a" class="label inputLabel uiLabel-left form-element__label uiLabel" data-aura-rendered-by="462:1949;a" data-aura-class="uiLabel"><span id="190:1949;a-label" class="" data-aura-rendered-by="463:1949;a">Birth Date</span><!--render facet: 465:1949;a--><!--render facet: 466:1949;a--></label>
+<div class="form-element" data-aura-rendered-by="194:1949;a"><input aria-labelledby="190:1949;a-label" aria-describedby="" id="190:1949;a" type="text" class=" input" data-aura-rendered-by="195:1949;a" data-interactive-lib-uid="5"><a role="button" aria-haspopup="true" class="datePicker-openIcon display" data-aura-rendered-by="197:1949;a" href="javascript:void(0);"><span class="assistiveText" data-aura-rendered-by="198:1949;a">Date Picker</span></a><!--render facet: 200:1949;a--><!--render facet: 201:1949;a--></div>
+<label for="305:1949;a" class="label inputLabel uiLabel-left form-element__label uiLabel" data-aura-rendered-by="517:1949;a" data-aura-class="uiLabel"><span id="305:1949;a-label" class="" data-aura-rendered-by="518:1949;a">Export Individual's Data</span><!--render facet: 520:1949;a--><!--render facet: 521:1949;a--></label>
+<input id="305:1949;a" type="checkbox" data-aura-rendered-by="309:1949;a" data-interactive-lib-uid="11">
+<label for="249:1949;a" class="label inputLabel uiLabel-left form-element__label uiLabel" data-aura-rendered-by="490:1949;a" data-aura-class="uiLabel"><span id="249:1949;a-label" class="" data-aura-rendered-by="491:1949;a">Don't Profile</span><!--render facet: 493:1949;a--><!--render facet: 494:1949;a--></label>
+<input id="249:1949;a" type="checkbox" data-aura-rendered-by="253:1949;a" data-interactive-lib-uid="8">
+<label for="321:1949;a" class="label inputLabel uiLabel-left form-element__label uiLabel" data-aura-rendered-by="526:1949;a" data-aura-class="uiLabel"><span id="321:1949;a-label" class="" data-aura-rendered-by="527:1949;a">Forget this Individual</span><!--render facet: 529:1949;a--><!--render facet: 530:1949;a--></label>
+<input id="321:1949;a" type="checkbox" data-aura-rendered-by="325:1949;a" data-interactive-lib-uid="12">
+<span id="357:1949;a-label" class="" data-aura-rendered-by="545:1949;a">Individual's Age</span>
+<div data-aura-rendered-by="366:1949;a"><a aria-disabled="false" role="combobox" aria-describedby="357:1949;a-label" tabindex="0" aria-expanded="false" aria-required="false" aria-haspopup="true" title="" class="select" data-aura-rendered-by="367:1949;a" href="javascript:void(0);" data-interactive-lib-uid="14">--None--</a></div>
+<li role="presentation" data-aura-rendered-by="1743:0" class="uiMenuItem uiRadioMenuItem" data-aura-class="uiMenuItem uiRadioMenuItem"><a data-aura-rendered-by="1744:0" href="javascript:void(0);" role="option" aria-disabled="false" tabindex="0" title="13 or Older" aria-selected="false"><b></b>13 or Older</a></li>
+<button aria-live="off" type="button" title="Save" class="slds-button slds-button_neutral uiButton--brand uiButton forceActionButton" aria-label="" data-aura-rendered-by="589:1949;a" data-aura-class="uiButton forceActionButton"><!--render facet: 590:1949;a--><span dir="ltr" class=" label bBody" data-aura-rendered-by="592:1949;a">Save</span><!--render facet: 587:1949;a--></button>
+
+===JAVA===
+
+package com.salesforce.pages;
+
+import org.openqa.selenium.WebElement;
+
+import com.framework.selenium.api.base.SeleniumBase;
+import com.framework.selenium.api.design.Locators;
+
+public class NewIndividualsPage extends SeleniumBase{
+
+	public NewIndividualsPage selectSalutationdropdown(String salutationType) {
+		selectOptionUsingText("//span[text()='Salutation']/following::a[1]", salutationType);
+		reportStep("Salutation "+salutationType+" is selected", "pass");
+		return this;
+	}
+	
+	public NewIndividualsPage typeFirstName(String firstName) {
+		clearAndType(locateElement(Locators.XPATH,"//span[text()='First Name']/following::input[1]"), firstName);;
+		reportStep("first name "+firstName+" is entered", "pass");
+		return this;
+	}
+	
+	public NewIndividualsPage typeLastName(String lastName) {
+		clearAndType(locateElement(Locators.XPATH,"//span[text()='Last Name']/following::input[1]"), lastName);
+		reportStep("Last name "+lastName+" is entered", "pass");
+		return this;
+	}
+	
+	public NewIndividualsPage typeDOB(String dob) {
+		clearAndType(locateElement(Locators.XPATH,"//span[text()='Birth Date']/following::input[1]"), dob);
+		reportStep("Date of Birth "+dob+" is entered", dob);
+		return this;
+	}
+	
+	public NewIndividualsPage clickExportIndividualsDataCheckbox() {
+		WebElement exportIndividualsCheckboxEle = locateElement(Locators.XPATH,"//span[contains(text(),'Export Individual')]/following::input[1]");
+		boolean verifySelected = verifySelected(exportIndividualsCheckboxEle);
+		if(!verifySelected) {
+			click(exportIndividualsCheckboxEle);
+			reportStep("Export individuals checkbox is clicked", "pass");
+		}
+		return this;
+	}
+	
+	public NewIndividualsPage clickDontProfileCheckbox() {
+		WebElement dontProfileCheckboxEle = locateElement(Locators.XPATH,"//span[contains(text(),'Profile')]/following::input[1]");
+		boolean verifySelected = verifySelected(dontProfileCheckboxEle);
+		if(!verifySelected) {
+		click(dontProfileCheckboxEle);
+		reportStep("Dont profile checkbox is clicked", "pass");
+		}
+		return this;
+	}
+	
+	public NewIndividualsPage clickForgetThisIndividualsCheckbox() {
+		WebElement forgetThisIndividualsCheckboxEle = locateElement(Locators.XPATH,"//span[text()='Forget this Individual']/following::input[1]");
+		boolean verifySelected = verifySelected(forgetThisIndividualsCheckboxEle);
+		if(!verifySelected) {
+			click(forgetThisIndividualsCheckboxEle);
+			reportStep("forget this individuals checkbox is clicked", "pass");
+		}
+		return this;
+	}
+	
+	public NewIndividualsPage selectIndividualsAgeDropdown(String ageOption) {
+		selectOptionUsingText("//span[contains(text(),'Age')]/following::a[1]", ageOption);
+		reportStep("Age "+ageOption+" is selected", "pass");
+		return this;
+	}
+	
+	
+	public NewIndividualsPage clickSave() {
+		click(locateElement(Locators.XPATH,"//button[@title='Save' and @aria-live='off']"));
+		reportStep("Save button is clicked", "pass");
+		return this;
+	}
+	
+	
+	
+}

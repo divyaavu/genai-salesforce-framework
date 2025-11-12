@@ -1,0 +1,122 @@
+===HTML===
+<div class="slds-breadcrumb__item slds-line-height_reset slds-line-height--reset">
+    <h1 class="slds-var-p-right_x-small">Incidents</h1>
+</div>
+<a href="javascript:void(0);" title="New" data-aura-rendered-by="8251:0" class="forceActionLink" data-aura-class="forceActionLink" role="button">
+    <div title="New" data-aura-rendered-by="8252:0"><!--render facet: 8253:0-->New</div>
+</a>
+<input class="slds-input" part="input" lwc-enmikoh2qu="" aria-label="Search this list..." id="input-618" name="Incident-search-input" placeholder="Search this list..." type="search" aria-describedby="listviewSearchTooltip-610 help-message-618">
+<table class="data-table" role="grid" aria-label="Incident List">
+  <thead>
+    <tr>
+      <th scope="col">Item Number</th>
+      <th scope="col">Selection</th>
+      <th scope="col">Incident Number</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Priority</th>
+      <th scope="col">Status</th>
+      <th scope="col">Category</th>
+      <th scope="col">Sub Category</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td role="gridcell" class="slds-cell-edit slds-cell-error errorColumn cellContainer" tabindex="-1" data-aura-rendered-by="1452:0"><span class="slds-grid slds-grid--align-spread" data-aura-rendered-by="1472:0"></span></td>
+        <td role="gridcell" class="slds-cell-edit cellContainer" tabindex="-1" data-aura-rendered-by="1474:0"><span class="slds-grid slds-grid--align-spread" data-aura-rendered-by="1486:0"><div class="slds-grid slds-grid--align-spread slds-align_absolute-center checkbox-container slds-checkbox uiInput forceVirtualCheckbox uiInput--default" data-aura-rendered-by="1479:0" data-aura-class="uiInput forceVirtualCheckbox uiInput--default"><input tabindex="0" id="1475:0__1" type="checkbox" class="keyboardMode--trigger" data-aura-rendered-by="1480:0" data-interactive-lib-uid="2" aria-label="Select item 1"><span class="slds-checkbox--faux slds-checkbox_faux" data-aura-rendered-by="1481:0"></span></div><!--render facet: 1484:0--></span></td>
+        <th scope="row" class="slds-cell-edit lockTrigger cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1488:0"><span class="slds-grid slds-grid_align-spread slds-grid--align-spread forceInlineEditCell" data-aura-rendered-by="1510:0" data-aura-class="forceInlineEditCell"><!--render facet: 1491:0--><!--render facet: 1493:0--><!--render facet: 1495:0--><a data-refid="recordId" data-special-link="true" title="INC-000000016" data-navigable="true" target="_blank" data-ownerid="1489:0" data-recordid="0nyJ3000000KykOIAS" rel="noreferrer" href="/lightning/r/0nyJ3000000KykOIAS/view" class="slds-truncate outputLookupLink slds-truncate outputLookupLink-0nyJ3000000KykOIAS-1489:0 forceOutputLookup" data-aura-rendered-by="1500:0" data-aura-class="forceOutputLookup">INC-000000016<!--render facet: 1503:0--></a></span></th>
+        <td role="gridcell" class="slds-cell-edit cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1520:0"><span class="slds-grid slds-grid_align-spread slds-grid--align-spread forceInlineEditCell" data-aura-rendered-by="1525:0" data-aura-class="forceInlineEditCell"><span class="slds-truncate uiOutputText" data-aura-rendered-by="1523:0" data-aura-class="uiOutputText" title="test">test</span><span class="triggerContainer" data-aura-rendered-by="1527:0"><button type="button" class="slds-button trigger slds-button_icon-border" data-aura-rendered-by="1530:0" title="Edit Subject: Item test"></button></span></span></td>
+        <td role="gridcell" class="slds-cell-edit cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1535:0"><span class="slds-grid slds-grid_align-spread slds-grid--align-spread forceInlineEditCell" data-aura-rendered-by="1541:0" data-aura-class="forceInlineEditCell"><span class="slds-truncate" data-aura-rendered-by="1538:0">Critical</span><span class="triggerContainer" data-aura-rendered-by="1543:0"><button type="button" class="slds-button trigger slds-button_icon-border" data-aura-rendered-by="1546:0" title="Edit Priority: Item Critical"><span class="slds-assistive-text" data-aura-rendered-by="1625:0">Edit Priority: Item Critical</span></button></span></span></td>
+        <td role="gridcell" class="slds-cell-edit cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1551:0"><span class="slds-grid slds-grid_align-spread slds-grid--align-spread forceInlineEditCell" data-aura-rendered-by="1557:0" data-aura-class="forceInlineEditCell"><span class="slds-truncate" data-aura-rendered-by="1554:0">New</span><span class="triggerContainer" data-aura-rendered-by="1559:0"><button type="button" class="slds-button trigger slds-button_icon-border" data-aura-rendered-by="1562:0" title="Edit Status: Item New"><span class="slds-assistive-text" data-aura-rendered-by="1627:0">Edit Status: Item New</span></button></span></span></td>
+        <td role="gridcell" class="slds-cell-edit cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1567:0"><span class="slds-grid slds-grid_align-spread slds-grid--align-spread forceInlineEditCell" data-aura-rendered-by="1573:0" data-aura-class="forceInlineEditCell"><span class="slds-truncate" data-aura-rendered-by="1570:0"></span><span class="triggerContainer" data-aura-rendered-by="1575:0"><button type="button" class="slds-button trigger slds-button_icon-border" data-aura-rendered-by="1578:0" title="Edit Category: Item null"><span class="slds-assistive-text" data-aura-rendered-by="1629:0">Edit Category: Item null</span></button></span></span></td>
+        <td role="gridcell" class="slds-cell-edit cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1583:0"><span class="slds-grid slds-grid_align-spread slds-grid--align-spread forceInlineEditCell" data-aura-rendered-by="1589:0" data-aura-class="forceInlineEditCell"><span class="slds-truncate" data-aura-rendered-by="1586:0"></span><span class="triggerContainer" data-aura-rendered-by="1591:0"><button type="button" class="slds-button trigger slds-button_icon-border" data-aura-rendered-by="1594:0" title="Edit Sub Category: Item null"><span class="slds-assistive-text" data-aura-rendered-by="1631:0">Edit Sub Category: Item null</span></button></span></span></td>
+        <td role="gridcell" class="slds-cell-edit cellContainer" tabindex="-1" data-aura-rendered-by="1599:0"><span class="slds-grid slds-grid--align-spread" data-aura-rendered-by="1614:0"><div data-target-selection-name="d3d97191b9714f2388cd2ad681fdc4ed" class="forceVirtualActionMarker forceVirtualAction" data-aura-rendered-by="1602:0" data-aura-class="forceVirtualAction"><a role="button" aria-expanded="false" aria-haspopup="true" title="" class="rowActionsPlaceHolder slds-button slds-button--icon-x-small slds-button_icon-x-small slds-button--icon-border-filled slds-button_icon-border-filled keyboardMode--trigger" data-aura-rendered-by="1603:0" href="javascript:void(0);"><span class="slds-icon_container slds-icon-utility-down" data-aura-rendered-by="1606:0"><span class="slds-assistive-text" data-aura-rendered-by="1611:0">Show Actions</span></span></a></div></span></td>
+    </tr>
+  </tbody>
+</table>
+<li role="presentation" data-aura-rendered-by="1757:0" class="uiMenuItem" data-aura-class="uiMenuItem"><a data-target-selection-name="sfdc:StandardButton.Incident.Edit" data-aura-rendered-by="1758:0" href="javascript:void(0);" role="menuitem" aria-disabled="false" tabindex="0" title="Edit"><!--render facet: 1693:0--><div title="Edit" data-aura-rendered-by="1778:0" class="forceActionLink" data-aura-class="forceActionLink"><!--render facet: 1779:0-->Edit</div></a></li>
+<li role="presentation" data-aura-rendered-by="1764:0" class="uiMenuItem" data-aura-class="uiMenuItem"><a data-target-selection-name="sfdc:StandardButton.Incident.Delete" data-aura-rendered-by="1765:0" href="javascript:void(0);" role="menuitem" aria-disabled="false" tabindex="0" title="Delete"><!--render facet: 1703:0--><div title="Delete" data-aura-rendered-by="1783:0" class="forceActionLink" data-aura-class="forceActionLink"><!--render facet: 1784:0-->Delete</div></a></li>
+<button aria-live="off" type="button" title="Delete" class="slds-button slds-button_neutral uiButton--default uiButton--brand uiButton forceActionButton" aria-label="" data-aura-rendered-by="1833:0" data-aura-class="uiButton--default uiButton--brand uiButton forceActionButton"><!--render facet: 1834:0--><span dir="ltr" class=" label bBody" data-aura-rendered-by="1836:0">Delete</span><!--render facet: 1831:0--></button>
+<div data-key="success" class="slds-theme--success slds-notify--toast slds-notify slds-notify--toast forceToastMessage" data-aura-rendered-by="7691:0" data-aura-class="forceToastMessage" data-f6-region="">
+    <span role="hidden" tabindex="0" data-toast-start="" data-aura-rendered-by="7693:0"></span>
+    <div tabindex="0" class="slds-list--inline" data-aura-rendered-by="7694:0">
+        <lightning-icon icon-name="utility:success" class="slds-icon-utility-success toastIcon slds-m-right--small slds-no-flex slds-align-top slds-icon_container" data-data-rendering-service-uid="1805" data-aura-rendered-by="7696:0" lwc-4897l11qtae-host="">
+            <span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary">
+                <span class="slds-assistive-text" lwc-4897l11qtae="">Success notification.</span>
+            </span>
+        </lightning-icon>
+        <div class="toastContent slds-notify__content slds-align-middle" data-aura-rendered-by="7697:0"><div class="slds-hyphenate" data-aura-rendered-by="7698:0"><!--render facet: 7699:0--><div id="toastDescription7689:0" data-aura-rendered-by="7700:0">
+            <span class="toastMessage slds-text-heading--small forceActionsText" data-aura-rendered-by="7705:0" data-aura-class="forceActionsText">Incident "<!--render facet: 7713:0-->
+                <a href="javascript:void(0)" title="INC-000000016" data-aura-rendered-by="7730:0" class="forceActionLink" data-aura-class="forceActionLink">
+                    <div title="" data-aura-rendered-by="7731:0"><!--render facet: 7732:0-->INC-000000016</div>
+                </a>" was Saved.
+            </span>
+        </div>
+    </div>
+</div>
+
+
+===JAVA===
+
+
+package com.salesforce.pages;
+
+import com.framework.selenium.api.base.SeleniumBase;
+import com.framework.selenium.api.design.Locators;
+
+public class IncidentPage extends SeleniumBase{
+
+	public IncidentPage verifyIncidentPage() {
+		verifyDisplayed(locateElement(Locators.XPATH, "//h1[text()='Incidents']"));
+		reportStep("Incident page is loded", "pass");
+		return this;
+	}
+	
+	public NewIncidentPage clickNewButton() {
+		click(Locators.XPATH,"//a[@title='New']");
+		reportStep("New button is clicked", "pass");
+		return new NewIncidentPage();
+	}
+	
+	public IncidentPage typeAndSearchIncident(String incidentNumber) {
+		typeAndEnter(locateElement(Locators.XPATH, "//input[@placeholder='Search this list...']"), incidentNumber);
+		reportStep("Incident number "+incidentNumber+" is searched", "pass");
+		return this;
+	}
+	
+	public IncidentPage verifyIncidentNumber(String expectedIncidentNumber) {
+		verifyExactText(locateElement(Locators.XPATH,"//table[@aria-label='Recently Viewed']/tbody/tr[1]/th[1]"), expectedIncidentNumber);
+		reportStep("Incident number "+expectedIncidentNumber+" is verified", "pass");
+		return this;
+	}
+
+    public IncidentPage clickFirstIncidentNumber() {
+		click(Locators.XPATH,"//table[@aria-label='Recently Viewed']/tbody/tr[1]/th[1]//a");
+		reportStep("First incident button is clicked", "pass");
+		return this;
+	}
+
+	public IncidentPage clickEditButton() {
+		click(Locators.XPATH,"//table[@aria-label='Recently Viewed']/tbody/tr[1]/td[8]");
+		click(Locators.XPATH,"//a[@title='Edit']");
+		reportStep("Edit button is clicked", "pass");
+		return this;
+	}
+    
+	
+	public IncidentPage deleteIncident() {
+		click(Locators.XPATH,"//table[@aria-label='Recently Viewed']/tbody/tr[1]/td[8]");
+		click(Locators.XPATH,"//a[@title='Delete']");
+		click(Locators.XPATH,"//button[@title='Delete']");
+		reportStep("Incident is deleted successfully", "pass");
+		return this;
+	}
+	
+	public IncidentPage verifyToasterMessage() {
+		verifyDisplayed(locateElement(Locators.XPATH, "//div[@data-aura-class='forceToastMessage']"));
+		reportStep("Toaster message is verified", "pass");
+		return this;
+	}
+	
+	
+}

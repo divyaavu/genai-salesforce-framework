@@ -1,0 +1,59 @@
+===HTML===
+<li data-target-selection-name="sfdc:StandardButton.Individual.New" class="slds-button slds-button--neutral slds-button_neutral" data-aura-rendered-by="842:0"><!--render facet: 838:0--><a href="javascript:void(0);" title="New" data-aura-rendered-by="845:0" class="forceActionLink" data-aura-class="forceActionLink" role="button"><div title="New" data-aura-rendered-by="846:0"><!--render facet: 847:0-->New</div></a></li>
+<input class="slds-input" part="input" lwc-enmikoh2qu="" aria-label="Search this list..." id="input-135" name="Individual-search-input" placeholder="Search this list..." type="search" aria-describedby="listviewSearchTooltip-126 help-message-135">
+<table class="data-table" role="grid" aria-label="Incident List">
+    <thead>
+        <tr>
+            <th scope="col" style="width: 60px;" class="errorColumnHeader " aria-label="Item Number" data-aura-rendered-by="6:683;a"></th>
+            <th scope="col" style="width: 264px;" title="Name" class="initialSortAsc sortable  slds-is-sortable  slds-is-resizable" aria-label="Name" data-aura-rendered-by="35:683;a"></th>
+            <th scope="col" style="width: 195px;" title="Alias" class="initialSortAsc sortable  slds-is-sortable  slds-is-resizable" aria-label="Alias" data-aura-rendered-by="52:683;a"></th>
+            <th scope="col" style="width: 195px;" title="Created By Alias" class="initialSortAsc sortable  slds-is-sortable  slds-is-resizable" aria-label="Created By Alias" data-aura-rendered-by="69:683;a"></th>
+            <th scope="col" style="width: 195px;" title="Last Modified By Alias" class="initialSortAsc sortable  slds-is-sortable  slds-is-resizable" aria-label="Last Modified By Alias" data-aura-rendered-by="86:683;a"></th>
+            <th scope="col" style="width: 277px;" title="Last Modified Date" class="initialSortDesc sortable  slds-is-sortable  slds-is-resizable" aria-label="Last Modified Date" data-aura-rendered-by="103:683;a"></th>
+            <th scope="col" style="width: 52px;" class="actionColumnHeader " aria-label="Action" data-aura-rendered-by="120:683;a"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td role="gridcell" class="slds-cell-edit slds-cell-error errorColumn cellContainer" tabindex="-1" data-aura-rendered-by="1469:0"></td>
+            <th scope="row" class="slds-cell-edit lockTrigger cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1491:0"><span class="slds-grid slds-grid_align-spread slds-grid--align-spread forceInlineEditCell" data-aura-rendered-by="1513:0" data-aura-class="forceInlineEditCell"><!--render facet: 1494:0--><!--render facet: 1496:0--><!--render facet: 1498:0--><a data-refid="recordId" data-special-link="true" title="paul Walker" data-navigable="true" target="_blank" data-ownerid="1492:0" data-recordid="0PKJ3000000Kz6jOAC" rel="noreferrer" href="/lightning/r/0PKJ3000000Kz6jOAC/view" class="slds-truncate outputLookupLink slds-truncate outputLookupLink-0PKJ3000000Kz6jOAC-1492:0 forceOutputLookup" data-aura-rendered-by="1503:0" data-aura-class="forceOutputLookup">paul Walker<!--render facet: 1506:0--></a><!--render facet: 1511:0--></span></th>
+            <td role="gridcell" class="slds-cell-edit lockTrigger cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1523:0"></td>
+            <td role="gridcell" class="slds-cell-edit lockTrigger cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1538:0"></td>
+            <td role="gridcell" class="slds-cell-edit lockTrigger cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1553:0"></td>
+            <td role="gridcell" class="slds-cell-edit lockTrigger cellContainer" tabindex="-1" data-aura-class="forceInlineEditCell" data-aura-rendered-by="1568:0"></td>
+            <td role="gridcell" class="slds-cell-edit cellContainer" tabindex="-1" data-aura-rendered-by="1583:0"></td>
+        </tr>
+    </tbody>
+</table>
+
+===JAVA===
+
+package com.salesforce.pages;
+
+import com.framework.selenium.api.base.SeleniumBase;
+import com.framework.selenium.api.design.Locators;
+
+public class IndividualsPage extends SeleniumBase{
+
+	public IndividualsPage clickNew() {
+		click(Locators.XPATH,"//a[@title='New']");
+		reportStep("New button is clicked", "pass");
+		return this;
+	}
+	
+	public IndividualsPage searchIndividuals(String individualsName) {
+		typeAndEnter(locateElement(Locators.XPATH, "//input[@placeholder='Search this list...']"), individualsName);
+		reportStep("Individual name "+individualsName+" is searched", "pass");
+		return this;
+	}
+	
+	
+	public IndividualsPage clickFirstIndividual() {
+		click(Locators.XPATH,"//table[@aria-label='Recently Viewed']/tbody/tr[1]/th[1]//a");
+		reportStep("First individual is clicked", "pass");
+		return this;
+	}
+	
+	
+	
+}

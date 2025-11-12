@@ -1,0 +1,44 @@
+===HTML===
+<input class="slds-input" part="input" lwc-enmikoh2qu="" id="input-171" placeholder="Search apps or items..." type="search" aria-describedby="help-message-171" aria-autocomplete="list" autocomplete="off" role="combobox" aria-activedescendant="" aria-expanded="true">
+<li lwc-72pl72prujq="" class="slds-size_1-of-5 slds-col--padded slds-p-vertical_small" style="width: 25%;"><one-app-launcher-tab-item lwc-72pl72prujq="" lwc-1eevcv35988-host=""><a lwc-1eevcv35988="" class="al-tab-item" href="/lightning/o/Incident/home" data-label="Incidents"><span lwc-1eevcv35988="" class="slds-truncate label-display"><lightning-formatted-rich-text lwc-1eevcv35988="" class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""><!----><span lwc-4nfn2rc40ch="" part="formatted-rich-text"><p class="slds-truncate" lwc-4nfn2rc40ch="">Incidents</p></span><!----></lightning-formatted-rich-text></span></a></one-app-launcher-tab-item></li>
+<li lwc-72pl72prujq="" class="slds-size_1-of-5 slds-col--padded slds-p-vertical_small" style="width: 25%;"><one-app-launcher-tab-item lwc-72pl72prujq="" lwc-1eevcv35988-host=""><a lwc-1eevcv35988="" class="al-tab-item" href="/lightning/o/Opportunity/home" data-label="Opportunities"><span lwc-1eevcv35988="" class="slds-truncate label-display"><lightning-formatted-rich-text lwc-1eevcv35988="" class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""><!----><span lwc-4nfn2rc40ch="" part="formatted-rich-text"><p class="slds-truncate" lwc-4nfn2rc40ch="">Opportunities</p></span><!----></lightning-formatted-rich-text></span></a></one-app-launcher-tab-item></li>
+<li lwc-72pl72prujq="" class="slds-size_1-of-5 slds-col--padded slds-p-vertical_small" style="width: 25%;"><one-app-launcher-tab-item lwc-72pl72prujq="" lwc-1eevcv35988-host=""><a lwc-1eevcv35988="" class="al-tab-item" href="/lightning/o/Individual/home" data-label="Individuals"><span lwc-1eevcv35988="" class="slds-truncate label-display"><lightning-formatted-rich-text lwc-1eevcv35988="" class="slds-rich-text-editor__output" lwc-4nfn2rc40ch-host=""><!----><span lwc-4nfn2rc40ch="" part="formatted-rich-text"><p class="slds-truncate" lwc-4nfn2rc40ch="">Individuals</p></span><!----></lightning-formatted-rich-text></span></a></one-app-launcher-tab-item></li>
+
+===JAVA===
+package com.salesforce.pages;
+
+import com.framework.selenium.api.base.SeleniumBase;
+import com.framework.selenium.api.design.Locators;
+
+public class AppLauncherPage extends SeleniumBase{
+
+	public AppLauncherPage searchAppOrItem(String appOrItemName) {
+		typeAndEnter(locateElement(Locators.XPATH, "//input[@placeholder='Search apps or items...']"), appOrItemName);
+		reportStep("Search apps or items is entered with text :"+appOrItemName, "pass");
+		return this;
+	}
+	
+	public IncidentPage searchAndClickIncident() {
+		typeAndEnter(locateElement(Locators.XPATH, "//input[@placeholder='Search apps or items...']"), "incidents");
+		click(Locators.XPATH,"//input[@placeholder='Search apps or items...']/following::li");
+		reportStep("Incidents is searched and clicked", "pass");
+		return new IncidentPage();
+	}
+	
+	public OpportunityPage searchAndClickOpportunity() {
+		typeAndEnter(locateElement(Locators.XPATH, "//input[@placeholder='Search apps or items...']"), "opportunities");
+		click(Locators.XPATH,"//input[@placeholder='Search apps or items...']/following::li");
+		reportStep("Opportunities is searched and clicked", "pass");
+		return new OpportunityPage();
+	}
+
+	
+	public IndividualsPage searchAndClickIndividuals() {
+		typeAndEnter(locateElement(Locators.XPATH, "//input[@placeholder='Search apps or items...']"), "Individuals");
+		click(Locators.XPATH,"//input[@placeholder='Search apps or items...']/following::li");
+		reportStep("Individuals is searched and clicked", "pass");
+		return new IndividualsPage();
+	}
+	
+	
+}

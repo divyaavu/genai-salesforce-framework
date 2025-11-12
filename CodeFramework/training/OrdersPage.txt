@@ -1,0 +1,19 @@
+===HTML===
+<a href="javascript:void(0);" title="New Order" data-aura-rendered-by="1067:0" class="forceActionLink" data-aura-class="forceActionLink" role="button"><div title="New Order" data-aura-rendered-by="1068:0"><!--render facet: 1069:0-->New Order</div></a>
+
+===JAVA===
+
+
+package com.salesforce.pages;
+
+import com.framework.selenium.api.base.SeleniumBase;
+import com.framework.selenium.api.design.Locators;
+
+public class OrdersPage extends SeleniumBase{
+
+	public NewOrdersPage clickNew() {
+		click(Locators.XPATH, "//a[@title='New Order']");
+		return new NewOrdersPage();
+	}
+	
+}

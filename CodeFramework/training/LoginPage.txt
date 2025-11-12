@@ -1,0 +1,52 @@
+
+===HTML===
+<div id="usernamegroup" class="inputgroup">
+    <label for="username" class="label usernamelabel">Username</label>
+    <div id="username_container">
+        <div id="idcard-container" class="mt8 mb16" style="display: none">
+            <div id="idcard">
+                <img id="idcard-avatar" class="avatar" alt="">
+                <a href="javascript:void(0);" id="clear_link" class="clearlink" onclick="LoginHint.clearExistingIdentity();">
+                    <img alt="Log In with a Different Username" class="clearicon" src="/img/clear.png">
+                </a>
+                <span id="idcard-identity"></span>
+            </div>
+        </div>
+        <input class="input r4 wide mb16 mt8 username" type="email" value="" name="username" id="username" aria-describedby="error" style="display: block;">
+    </div>
+</div>
+
+<input class="input r4 wide mb16 mt8 password" type="password" id="password" name="pw" aria-describedby="error" aria-required="true" onkeypress="checkCaps(event)" autocomplete="off">
+
+<input class="button r4 wide primary" type="submit" id="Login" name="Login" value="Log In">
+
+===JAVA===
+
+package com.salesforce.pages;
+
+
+import com.framework.selenium.api.base.SeleniumBase;
+import com.framework.selenium.api.design.Locators;
+
+public class LoginPage extends SeleniumBase{
+	
+	public LoginPage typeUserName(String username) {
+		type(locateElement(Locators.ID, "username"), username);
+		reportStep("The username is typed in Login Page", "pass");
+		return this;
+	}
+	
+	public LoginPage typePassword(String password) {
+		type(locateElement(Locators.ID, "password"), password);
+		reportStep("The password is typed in Login Page", "pass");
+		return this;
+	}
+	
+	public LoginPage clickLogin() {
+		click(locateElement(Locators.ID, "Login"));
+		reportStep("The Login button is clicked", "pass");
+		return this;
+	}
+	
+}
+

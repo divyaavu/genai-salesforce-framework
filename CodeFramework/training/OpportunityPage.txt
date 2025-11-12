@@ -1,0 +1,19 @@
+===HTML===
+<a href="javascript:void(0);" title="New" data-aura-rendered-by="771:0" class="forceActionLink" data-aura-class="forceActionLink" role="button"><div title="New" data-aura-rendered-by="772:0"><!--render facet: 773:0-->New</div></a>
+<div title="Assign Label" data-aura-rendered-by="778:0"><!--render facet: 779:0-->Assign Label</div>
+<input class="slds-input" part="input" lwc-enmikoh2qu="" aria-label="Search this list..." id="input-60" name="Opportunity-search-input" placeholder="Search this list..." type="search" aria-describedby="listviewSearchTooltip-50 help-message-60">
+
+===JAVA===
+package com.salesforce.pages;
+
+import com.framework.selenium.api.base.SeleniumBase;
+import com.framework.selenium.api.design.Locators;
+
+public class OpportunityPage extends SeleniumBase{
+
+	public NewOpportunityPage clickNew() {
+		click(Locators.XPATH, "//a[@title='New']");
+		return new NewOpportunityPage();
+	}
+	
+}

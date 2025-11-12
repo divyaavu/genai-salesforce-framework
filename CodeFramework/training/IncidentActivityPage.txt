@@ -1,0 +1,75 @@
+===HTML===
+<button aria-live="off" type="button" title="Share an update..." class="slds-button slds-button_neutral slds-col slds-no-space dummyButtonCallToAction uiButton" aria-label="" data-aura-rendered-by="13430:0" data-aura-class="uiButton"><!--render facet: 13431:0--><span dir="ltr" class=" label bBody" data-aura-rendered-by="13433:0">Share an update...</span><!--render facet: 13435:0--></button>
+<div class="ql-editor ql-blank slds-rich-text-area__content slds-text-color_weak slds-grow" data-gramm="false" contenteditable="true" data-placeholder="Share an update..." role="textbox" aria-labelledby="label-13581:0" spellcheck="false"><p><br></p></div>
+<button type="button" title="Click, or press Ctrl+Enter" class="slds-button slds-button_brand cuf-publisherShareButton qe-textPostDesktop MEDIUM" data-aura-rendered-by="13773:0"><!--render facet: 13774:0-->Share<!--render facet: 13777:0--></button>
+<li role="presentation" class="tabs__item uiTabItem" data-aura-rendered-by="13401:0" data-aura-class="uiTabItem" data-original-width="55"><a aria-selected="false" data-tab-name="FeedItem.PollPost" role="tab" aria-controls="13381:0" tabindex="-1" data-target-selection-name="FeedItem.PollPostTab" title="Poll" class="tabHeader" data-aura-rendered-by="13403:0" href="javascript:void(0);" data-refid="tab-name"><span data-aura-rendered-by="13404:0"><!--render facet: 13405:0--></span><span class="title" data-aura-rendered-by="13406:0">Poll</span><!--render facet: 13408:0--></a></li>
+<li role="presentation" class="tabs__item uiTabItem" data-aura-rendered-by="13411:0" data-aura-class="uiTabItem" data-original-width="89"><a aria-selected="false" data-tab-name="FeedItem.QuestionPost" role="tab" aria-controls="13385:0" tabindex="-1" data-target-selection-name="FeedItem.QuestionPostTab" title="Question" class="tabHeader" data-aura-rendered-by="13413:0" href="javascript:void(0);" data-refid="tab-name"><span data-aura-rendered-by="13414:0"><!--render facet: 13415:0--></span><span class="title" data-aura-rendered-by="13416:0">Question</span><!--render facet: 13418:0--></a></li>
+<textarea role="textbox" aria-labelledby="14167:0-label" id="14167:0" placeholder="What would you like to ask?" class="inputTextArea cuf-publisherTextArea  inputTextArea cuf-messageTextArea textareaclass textarea" cols="20" data-aura-rendered-by="14171:0" data-interactive-lib-uid="99" style="height: auto;"></textarea>
+<label for="14292:0" class="uiLabel-top form-element__label uiLabel" data-aura-rendered-by="14325:0" data-aura-class="uiLabel"><span id="14292:0-label" class="" data-aura-rendered-by="14326:0">Choice 1</span><!--render facet: 14328:0--><!--render facet: 14329:0--></label>
+<input aria-labelledby="14292:0-label" maxlength="100" aria-describedby="" id="14292:0" placeholder="" type="text" class="inputField cuf-pollChoiceField input" data-aura-rendered-by="14296:0" data-interactive-lib-uid="100">
+<label for="14304:0" class="uiLabel-top form-element__label uiLabel" data-aura-rendered-by="14334:0" data-aura-class="uiLabel"><span id="14304:0-label" class="" data-aura-rendered-by="14335:0">Choice 2</span><!--render facet: 14337:0--><!--render facet: 14338:0--></label>
+<input aria-labelledby="14304:0-label" maxlength="100" aria-describedby="" id="14304:0" placeholder="" type="text" class="inputField cuf-pollChoiceField input" data-aura-rendered-by="14308:0" data-interactive-lib-uid="101">
+<div class="bottomBarLeft slds-col" data-aura-rendered-by="14281:0"><button type="button" class="slds-button slds-button_brand cuf-addChoiceButton" data-aura-rendered-by="14245:0"><lightning-primitive-icon variant="bare" data-data-rendering-service-uid="3633" data-aura-rendered-by="14247:0" lwc-3220386utb1-host=""><svg focusable="false" aria-hidden="true" viewBox="0 0 520 520" part="icon" lwc-3220386utb1="" data-key="add" class="slds-button__icon slds-button__icon_left"><g lwc-3220386utb1=""><path d="M300 290h165c8 0 15-7 15-15v-30c0-8-7-15-15-15H300c-6 0-10-4-10-10V55c0-8-7-15-15-15h-30c-8 0-15 7-15 15v165c0 6-4 10-10 10H55c-8 0-15 7-15 15v30c0 8 7 15 15 15h165c6 0 10 4 10 10v165c0 8 7 15 15 15h30c8 0 15-7 15-15V300c0-6 4-10 10-10z" lwc-3220386utb1=""></path></g></svg></lightning-primitive-icon>Add new choice<!--render facet: 14250:0--></button></div>
+<div class="bottomBarRight slds-col--bump-left" data-aura-rendered-by="14283:0"><button type="button" class="slds-button slds-button_brand cuf-publisherShareButton qe-pollPostDesktop MEDIUM" data-aura-rendered-by="14238:0"><!--render facet: 14239:0-->Ask<!--render facet: 14242:0--></button></div>
+<label lwc-24on3e8rogg="" class="slds-form-element__label" part="label" for="combobox-button-2026">Sort by:</label>
+<lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain slds-has-focus" data-item-id="combobox-button-2026-0" exportparts="option" data-value="CreatedDateDesc" role="option" id="combobox-button-2026-0-2026" aria-checked="true" aria-selected="true" lwc-7co8ha3nedg-host=""><span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"><lightning-icon lwc-7co8ha3nedg="" icon-name="utility:check" class="slds-icon-utility-check slds-icon_container" lwc-4897l11qtae-host=""><span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary"><lightning-primitive-icon lwc-4897l11qtae="" exportparts="icon" size="x-small" variant="" lwc-1e39mgvor8u-host=""><svg focusable="false" aria-hidden="true" viewBox="0 0 520 520" part="icon" lwc-1e39mgvor8u="" data-key="check" class="slds-icon slds-icon-text-default slds-icon_x-small"><g lwc-1e39mgvor8u=""><path d="M191 425L26 259c-6-6-6-16 0-22l22-22c6-6 16-6 22 0l124 125a10 10 0 0015 0L452 95c6-6 16-6 22 0l22 22c6 6 6 16 0 22L213 425c-6 7-16 7-22 0z" lwc-1e39mgvor8u=""></path></g></svg></lightning-primitive-icon></span></lightning-icon></span><span lwc-7co8ha3nedg="" class="slds-media__body"><span lwc-7co8ha3nedg="" title="Latest Posts">Latest Posts</span></span></lightning-base-combobox-item>
+<lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-media_small slds-listbox__option_plain" data-item-id="combobox-button-2026-1" exportparts="option" data-value="LastModifiedDateDesc" role="option" id="combobox-button-2026-1-2026" aria-checked="false" aria-selected="false" lwc-7co8ha3nedg-host=""><span lwc-7co8ha3nedg="" class="slds-media__figure slds-listbox__option-icon"></span><span lwc-7co8ha3nedg="" class="slds-media__body"><span lwc-7co8ha3nedg="" title="Most Recent Activity">Most Recent Activity</span></span></lightning-base-combobox-item>
+
+===JAVA===
+
+package com.salesforce.pages;
+
+import com.framework.selenium.api.base.SeleniumBase;
+import com.framework.selenium.api.design.Locators;
+
+public class IncidentActivityPage extends SeleniumBase{
+
+	public IncidentActivityPage typeAndSharePost(String post) {
+		clickUsingJs(locateElement(Locators.XPATH, "//button[@title='Share an update...']"));
+		clearAndType(locateElement(Locators.XPATH, "//div[@data-placeholder='Share an update...']"), post);
+		clickUsingJs(locateElement(Locators.XPATH,"//button[text()='Share']"));
+		reportStep("Post "+post+" is shared", "pass");
+		return this;
+	}
+	
+	public IncidentActivityPage clickPollTab() {
+		clickUsingJs(locateElement(Locators.XPATH,"//a[@title='Poll']"));
+		reportStep("poll tab is clicked", "pass");
+		return this;
+	}
+	
+	public IncidentActivityPage clickQuestionTab() {
+		clickUsingJs(locateElement(Locators.XPATH,"//a[@data-tab-name='FeedItem.QuestionPost']"));
+		reportStep("question tab is clicked", "pass");
+		return this;
+	}
+	
+	public IncidentActivityPage typePollQuestion(String pollQuestion) {
+		clearAndType(locateElement(Locators.XPATH,"//textarea[@placeholder='What would you like to ask?']"), pollQuestion);
+		reportStep("poll question "+pollQuestion+" is entered", "pass");
+		return this;
+	}
+	
+	public IncidentActivityPage typeChoiceOne(String firstChoice) {
+		clearAndType(locateElement(Locators.XPATH,"//span[text()='Choice 1']/following::input[1]"), firstChoice);
+		reportStep("first choice "+firstChoice+" is entered", "pass");
+		return this;
+	}
+	
+	
+	
+	public IncidentActivityPage clickAddNewChoice() {
+		clickUsingJs(locateElement(Locators.XPATH,"//button[text()='Add new choice']"));
+		reportStep("New choice filed is added", "pass");
+		return this;
+	}
+	
+	
+	public IncidentActivityPage sortByLatestPost() {
+		click(Locators.XPATH,"//label[text()='Sort by:']/following::button[1]");
+		click(Locators.XPATH,"//lightning-base-combobox-item[@data-value='CreatedDateDesc']");
+		reportStep("Sorted the post by latest", "pass");
+		return this;
+	}
+}
+

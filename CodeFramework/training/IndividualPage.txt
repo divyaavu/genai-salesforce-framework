@@ -1,0 +1,61 @@
+===HTML===
+<h1 data-aura-rendered-by="2027:0"><div class="entityNameTitle slds-line-height_reset" data-aura-rendered-by="2028:0">Individual</div><div class="slds-page-header__title slds-m-right--small slds-align-middle slds-line-clamp clip-text" data-aura-rendered-by="2030:0" title="Mr. paul Walker"><span data-aura-rendered-by="2008:0" class="uiOutputText" data-aura-class="uiOutputText">Mr. paul Walker</span></div></h1>
+<a lwc-3ggls0i1jqr="" class="rlql-relatedListLink" href="/lightning/r/Individual/0PKJ3000000Kz6jOAC/related/Contacts/view"><span class="rlql-label" lwc-3ggls0i1jqr="" title="Contacts">Contacts</span><span class="rlql-count slds-m-left_xx-small" lwc-3ggls0i1jqr="" title="(2)">(2)</span></a>
+<button lwc-40a585din3p="" class="slds-button slds-button_neutral" aria-disabled="false" name="NewContact" type="button" part="button" kx-scope="button-neutral" kx-type="ripple">New</button>
+<label lwc-24on3e8rogg="" class="slds-form-element__label" part="label" for="combobox-button-417">Salutation</label>
+<div lwc-4kb6kaqheak="" class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none"><button lwc-4kb6kaqheak="" class="slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value" id="combobox-button-417" type="button" aria-expanded="false" aria-haspopup="listbox" name="salutation" role="combobox" data-value="--None--" aria-disabled="false" aria-label="Salutation" aria-required="false" part="input-button" aria-controls="dropdown-element-417"><span lwc-4kb6kaqheak="" class="slds-truncate" part="input-button-value">--None--</span></button></div>
+<label lwc-enmikoh2qu="" class="slds-form-element__label slds-no-flex" for="input-423" part="label"><abbr class="slds-required" part="required" lwc-enmikoh2qu="" title="required">*</abbr>Last Name<slot lwc-enmikoh2qu="" name="label-end"><slot lwc-66unc5l95ad="" name="label-end" slot="label-end"></slot></slot></label>
+<div lwc-enmikoh2qu="" class="slds-form-element__control slds-grow" part="input-container" type="text"><input class="slds-input" part="input" lwc-enmikoh2qu="" id="input-423" maxlength="80" name="lastName" placeholder="Last Name" required="" type="text" aria-describedby="help-message-423"></div>
+<label lwc-5jdm1rt8ibq="" class="slds-form-element__label" data-main-label="" for="combobox-input-529">Account Name</label>
+<div lwc-4kb6kaqheak="" part="input-container"><input lwc-4kb6kaqheak="" class="slds-combobox__input slds-input" id="combobox-input-529" type="text" role="combobox" aria-expanded="false" aria-haspopup="listbox" autocomplete="off" data-value="" placeholder="Search Accounts..." maxlength="255" aria-disabled="false" aria-autocomplete="list" part="input" aria-controls="dropdown-element-529"></div>
+<li lwc-4kb6kaqheak="" class="slds-listbox__item" role="presentation"><lightning-base-combobox-item lwc-4kb6kaqheak="" class="slds-media slds-listbox__option slds-media_center slds-listbox__option_entity" data-item-id="combobox-input-529-0" data-value="001J300000AiDscIAF" role="option" id="combobox-input-529-0-529" aria-checked="false" aria-selected="false" lwc-3povdhm22r3-host=""><span lwc-3povdhm22r3="" class="slds-media__body"><span lwc-3povdhm22r3="" class="slds-listbox__option-text slds-listbox__option-text_entity"><span lwc-3povdhm22r3="" title="Gokul">Gokul</span></span></span></lightning-base-combobox-item></li>
+<button lwc-40a585din3p="" class="slds-button slds-button_brand" aria-disabled="false" name="SaveEdit" type="button" part="button" kx-scope="button-brand" kx-type="ripple" style="">Save</button>
+
+===JAVA===
+
+package com.salesforce.pages;
+
+import com.framework.selenium.api.base.SeleniumBase;
+import com.framework.selenium.api.design.Locators;
+
+public class IndividualPage extends SeleniumBase{
+
+	public IndividualPage clickContactsForIndividual() {
+		click(locateElement(Locators.XPATH,"//div[text()='Individual']/following::span[text()='Contacts']/parent::a[1]"));
+		reportStep("Contacts for individual is clicked", "pass");
+		return this;
+	}
+	
+	public IndividualPage clickNewContact() {
+		click(locateElement(Locators.XPATH,"//button[@name='NewContact']"));
+		reportStep("New Contact button is clicked", "pass");
+		return this;
+	}
+	
+	public IndividualPage selectSalutationdropdown(String salutationType) {
+		selectOptionUsingText("//label[text()='Salutation']/following::button[1]", salutationType);
+		reportStep("Salutation "+salutationType+" is selected", "pass");
+		return this;
+	}
+	
+	public IndividualPage typeLastName(String lastName) {
+		clearAndType(locateElement(Locators.XPATH,"//label[text()='Last Name']/following::input[1]"), lastName);
+		reportStep("Last name "+lastName+" is entered", lastName);
+		return this;
+	}
+	
+	public IndividualPage searchAndChooseAccountName(String accountName) {
+		clearAndType(locateElement(Locators.XPATH,"//label[text()='Account Name']/following::input[1]"), accountName);
+		pause(1000);
+		click(locateElement(Locators.XPATH,"//label[text()='Account Name']/following::input[1]/following::li[1]"));
+		reportStep("Account name "+accountName+" is selected", "pass");
+		return this;
+	}
+	
+	public IndividualPage clickSave() {
+		click(locateElement(Locators.XPATH,"//button[@name='SaveEdit']"));
+		reportStep("Save button is clicked", "pass");
+		return this;
+	}
+	
+}

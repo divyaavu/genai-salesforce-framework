@@ -1,0 +1,113 @@
+===HTML===
+<div class="slds-modal__header" lwc-2vd35b3jo08="">
+    <h2 class="slds-modal__title slds-hyphenate slds-text-heading--medium" lwc-2vd35b3jo08="">New Incident</h2>
+</div>
+<label lwc-enmikoh2qu="" class="slds-form-element__label slds-no-flex" for="input-769" part="label">
+    <abbr class="slds-required" part="required" lwc-enmikoh2qu="" title="required">*</abbr>Subject<slot lwc-enmikoh2qu="" name="label-end"><slot lwc-66unc5l95ad="" name="label-end" slot="label-end"></slot></slot>
+</label>
+<div lwc-enmikoh2qu="" class="slds-form-element__control slds-grow" part="input-container" type="text">
+    <input class="slds-input" part="input" lwc-enmikoh2qu="" id="input-769" maxlength="255" name="Subject" required="" type="text" aria-describedby="help-message-769" aria-invalid="true">
+</div>
+<label lwc-24on3e8rogg="" class="slds-form-element__label" part="label" for="combobox-button-1576"><abbr class="slds-required" part="required" lwc-24on3e8rogg="" title="required">*</abbr>Status</label>
+<div lwc-4kb6kaqheak class="slds-combobox_container">
+    <button lwc-4kb6kaqheak="" class="slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value" id="combobox-button-1576" type="button" aria-expanded="true" aria-haspopup="listbox" role="combobox" data-value="New" aria-disabled="false" aria-label="Status" aria-required="true" part="input-button" aria-controls="dropdown-element-1576" data-position-id="lgcp-1000061" aria-activedescendant="combobox-button-1576-1-1576"><span lwc-4kb6kaqheak="" class="slds-truncate" part="input-button-value">New</span></button>
+</div>
+<label lwc-24on3e8rogg="" class="slds-form-element__label" part="label" for="combobox-button-1596"><abbr class="slds-required" part="required" lwc-24on3e8rogg="" title="required">*</abbr>Urgency</label>
+<div lwc-4kb6kaqheak class="slds-combobox_container">
+    <button lwc-4kb6kaqheak="" class="slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value" id="combobox-button-1596" type="button" aria-expanded="false" aria-haspopup="listbox" role="combobox" data-value="High" aria-disabled="false" aria-label="Urgency" aria-required="true" part="input-button" aria-controls="dropdown-element-1596"><span lwc-4kb6kaqheak="" class="slds-truncate" part="input-button-value">High</span></button>
+</div>
+<label lwc-24on3e8rogg="" class="slds-form-element__label" part="label" for="combobox-button-1607"><abbr class="slds-required" part="required" lwc-24on3e8rogg="" title="required">*</abbr>Impact</label>
+<div lwc-4kb6kaqheak class="slds-combobox_container">
+    <button lwc-4kb6kaqheak="" class="slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value" id="combobox-button-1607" type="button" aria-expanded="false" aria-haspopup="listbox" role="combobox" data-value="High" aria-disabled="false" aria-label="Impact" aria-required="true" part="input-button" aria-controls="dropdown-element-1607"><span lwc-4kb6kaqheak="" class="slds-truncate" part="input-button-value">High</span></button>
+</div>
+<label lwc-24on3e8rogg="" class="slds-form-element__label" part="label" for="combobox-button-1624"><abbr class="slds-required" part="required" lwc-24on3e8rogg="" title="required">*</abbr>Priority</label>
+<div lwc-4kb6kaqheak class="slds-combobox_container">
+    <button lwc-4kb6kaqheak="" class="slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value" id="combobox-button-1624" type="button" aria-expanded="false" aria-haspopup="listbox" role="combobox" data-value="Critical" aria-disabled="false" aria-label="Priority" aria-required="true" part="input-button" aria-controls="dropdown-element-1624"><span lwc-4kb6kaqheak="" class="slds-truncate" part="input-button-value">Critical</span></button>
+</div>
+<button lwc-40a585din3p="" class="slds-button slds-button_brand" aria-disabled="false" name="SaveEdit" type="button" part="button" kx-scope="button-brand" kx-type="ripple" style="">Save</button>
+<div data-key="success" class="slds-theme--success slds-notify--toast slds-notify slds-notify--toast forceToastMessage" data-aura-rendered-by="7691:0" data-aura-class="forceToastMessage" data-f6-region="">
+    <span role="hidden" tabindex="0" data-toast-start="" data-aura-rendered-by="7693:0"></span>
+    <div tabindex="0" class="slds-list--inline" data-aura-rendered-by="7694:0">
+        <lightning-icon icon-name="utility:success" class="slds-icon-utility-success toastIcon slds-m-right--small slds-no-flex slds-align-top slds-icon_container" data-data-rendering-service-uid="1805" data-aura-rendered-by="7696:0" lwc-4897l11qtae-host="">
+            <span lwc-4897l11qtae="" style="--sds-c-icon-color-background: var(--slds-c-icon-color-background, transparent)" part="boundary">
+                <span class="slds-assistive-text" lwc-4897l11qtae="">Success notification.</span>
+            </span>
+        </lightning-icon>
+        <div class="toastContent slds-notify__content slds-align-middle" data-aura-rendered-by="7697:0"><div class="slds-hyphenate" data-aura-rendered-by="7698:0"><!--render facet: 7699:0--><div id="toastDescription7689:0" data-aura-rendered-by="7700:0">
+            <span class="toastMessage slds-text-heading--small forceActionsText" data-aura-rendered-by="7705:0" data-aura-class="forceActionsText">Incident "<!--render facet: 7713:0-->
+                <a href="javascript:void(0)" title="INC-000000016" data-aura-rendered-by="7730:0" class="forceActionLink" data-aura-class="forceActionLink">
+                    <div title="" data-aura-rendered-by="7731:0"><!--render facet: 7732:0-->INC-000000016</div>
+                </a>" was created.
+            </span>
+        </div>
+    </div>
+</div>
+<a class="slds-context-bar__label-action dndItem" href="/lightning/o/Incident/home" title="INC-000000016 | Incident" tabindex="0" draggable="false" aria-current="page"><abbr class="slds-indicator_unsaved slds-p-right_xx-small" title="Not added to nav bar">*</abbr><span class="slds-truncate">INC-000000016 | Incident</span></a>
+
+
+===JAVA===
+
+
+package com.salesforce.pages;
+
+import com.framework.selenium.api.base.SeleniumBase;
+import com.framework.selenium.api.design.Locators;
+
+public class NewIncidentPage extends SeleniumBase{
+
+	
+	public NewIncidentPage verifyNewIncidentPage() {
+		verifyDisplayed(locateElement(Locators.XPATH, "//h2[text()='New Incident']"));
+		reportStep("New Incident page is loded", "pass");
+		return this;
+	}
+	
+	public NewIncidentPage typeSubject(String subjectName) {
+		clearAndType(locateElement(Locators.XPATH, "//label[text()='Subject']/following::input[1]"), subjectName);
+		reportStep("Subject name "+subjectName+" is entered", "pass");
+		return this;
+	}
+
+	public NewIncidentPage selectStatus(String status) {
+		selectOptionUsingText("//label[text()='Status']/following::button[1]", status);
+		reportStep(status+" is selected in the status dropdown", "pass");
+		return this;
+	}
+	
+	public NewIncidentPage selectUrgency(String urgency) {
+		selectOptionUsingText("//label[text()='Urgency']/following::button[1]", urgency);
+		reportStep(urgency+" is selected in the urgency dropdown", "pass");
+		return this;
+	}
+	
+	public NewIncidentPage selectImpact(String impact) {
+		selectOptionUsingText("//label[text()='Impact']/following::button[1]", impact);
+		reportStep(impact+" is selected in the impact dropdown", "pass");
+		return this;
+	}
+	
+	public NewIncidentPage selectPriorty(String priorty) {
+		selectOptionUsingText("//label[text()='Priority']/following::button[1]", priorty);
+		reportStep(priorty+" is selected in the priority dropdown", "pass");
+		return this;
+	}
+
+	public NewIncidentPage clickSaveButton() {
+		click(Locators.XPATH,"//button[text()='Save']");
+		reportStep("Save button is clicked", "pass");
+		return this;
+	}
+	
+	public NewIncidentPage verifyToasterMessage() {
+		verifyDisplayed(locateElement(Locators.XPATH, "//div[@data-aura-class='forceToastMessage']"));
+		reportStep("Toaster message is verified", "pass");
+		return this;
+	}
+	
+	public NewIncidentPage clickIncidentTab() {
+		clickUsingJs(locateElement(Locators.XPATH, "//a[contains(@title,'Incident')]"));
+		reportStep("Incident tab clicked", "pass");
+		return this;
+	}
+	
+}
