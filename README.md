@@ -71,14 +71,10 @@ Each line follows the JSONL schema:
   ]
 }
 
-How to Explore
 
-Open the folder in Visual Studio Code.
 
-Review the ai-extensionsgen folder for extension logic and structure.
-
-Examine the training folder for domain examples and data.
-
-Open training_data_chat.jsonl or validation_data_chat.jsonl to view how prompt-response pairs are defined.
 
 The data can be used for experimenting with LLM fine-tuning, code generation, or intelligent test script creation.
+
+
+
